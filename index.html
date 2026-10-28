@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Grid</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .outer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .container {
+            background-color:#3d3d3d;
+            width: 400px;
+            height: 720px;
+            border-radius: 20px;
+        }
+        .interface {
+            background-color: #fff067;
+            height: 240px;
+            border-radius: 20px;
+            margin-bottom: 5px;
+        }
+        .button {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 15px;
+            gap: 5px;
+            row-gap: 15px;
+        }
+        .button > button {
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+            font-size: xx-large;
+            color: #fff067;
+            text-align: center;
+            background-color: #2e2e2e;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px 2px #1d1d1d;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div>
+            <h2>Reference</h2>
+            <img src="image.png" alt="kalkulator grid">
+        </div>
+        <div>
+            <h2>Challenge Using Grid</h2>
+            <div class="container">
+                <div class="interface"></div>
+                <div class="button">
+                    <button>C</button>
+                    <button>%</button>
+                    <button>⌫</button>
+                    <button>&divide;</button>
+                    
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>&times;</button>
+    
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>-</button>
+    
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>+</button>
+    
+                    <button>00</button>
+                    <button>0</button>
+                    <button>.</button>
+                    <button>=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
